@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,500&display=swap');
+
+        body {
+			font-family: 'Cormorant Garamond', serif;
+			font-size: 16px;
+			color: #333;
+			background-color: #f5f5f5;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+		}
+		h1 {
+			font-size: 30px;
+			/* text-align: center; */
+			margin-bottom: 30px;
+			color: #146C94;
+		}
+        p{
+            font-size: 20px;
+            font-weight: 600;
+            color: #19A7CE;
+        }
+		.form-group {
+			margin-bottom: 20px;
+		}
+		label {
+			display: block;
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 10px;
+			color: #666;
+		}
+		input[type="text"], input[type="tel"], input[type="email"] {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			font-size: 16px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+		}
+		input[type="submit"] {
+			background-color: #0099ff;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			font-size: 18px;
+			padding: 10px 20px;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: #0080ff;
+		}
+		.textarea {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			font-size: 16px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+			resize: vertical;
+			height: 150px;
+		}
+		.toggle-button {
+			display: inline-block;
+			background-color: #0099ff;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			font-size: 18px;
+			padding: 10px 20px;
+			cursor: pointer;
+			margin: 20px auto;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+		.toggle-button:hover {
+			background-color: #0080ff;
+		}
+		.hidden {
+			display: none;
+		}
+		div.sticky {
+		position: -webkit-sticky; /* Safari */
+		position: sticky;
+		top: 0;
+		background-color: #f1f1f1;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		border-radius: 20px;
+		margin: 30px;
+		}
+		.issue-description{
+			display: flex;
+			justify-content: center;
+			padding: 10px;
+		}
+        #timer {
+        display: inline-block;
+        font-size: 26px;
+        margin: 10px;
+        }
+        .hold-btn{
+            display: flex;
+			justify-content: space-around;
+        }
+
+        .input-container {
+            margin-bottom: 20px;   
+            /* position: sticky; 
+            top: 50;  
+            background-color: #666; */
+        }
+        .input-field {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+          }
+          .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* max-width: 400px; */
+            transition: max-height 0.3s ease-in-out;
+            overflow: hidden;
+            background-color: #f0f8ea;
+            padding: 10px;
+          }
+
+          .character {
+            padding: 8px 15px;
+            margin: 5px;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+          }
+      
+          .space {
+          background-color: #f2f2f2;
+          font-weight: bold;
+          }
+
+          .toggle-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin-left: 5px;
+        }
+        
+        .toggle-button:hover {
+          background-color: #45a049;
+        }
+        
+        .hidden {
+        height: 50vh;
+        display: none;
+        }
+
+        .nato-checker{
+            font-size: 38px;
+            color: #4CAF50;
+        } 
+        .timer{
+            margin-top: 10px;
+            font-size: 40px;
+        } 
+        .content-container{
+            margin-bottom: 50px;
+        }
+		.flex{
+			display: flex;
+		}
+		.rough-name{
+			margin-right: 10px;
+		}
+
+
+

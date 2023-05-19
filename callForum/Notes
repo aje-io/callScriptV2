@@ -1,0 +1,30 @@
+        <div class="form-group">
+			<label for="issue-description">Issue Description:</label>
+			<textarea rows="74" cols="50" id="issue-description" name="issue-description" class="textarea" required></textarea>
+		</div>
+		</div>
+       <div class="text">
+        <p>Tell the customer that you will be happy to help and assure them</p>
+        <h1>I am really sorry to hear that, let me see the best I can do for you today Before proceeding <br>May I know your first and last name  </h1> 
+       </div>
+        <div class="form-group">
+			<label for="first-name">First Name:</label>
+			<input type="text" id="first-name" name="first-name" required>
+		</div>
+
+With the current css configuration, if you dont add the below div then the sticky Div will be scrolable
+<div class="text">
+
+    <div class="form-group">
+        <label for="issue-description">Issue Description:</label>
+        <textarea rows="74" cols="50" id="issue-description" name="issue-description" class="textarea" required></textarea>
+    </div>
+    </div>
+   
+    <p>Tell the customer that you will be happy to help and assure them</p>
+    <h1>I am really sorry to hear that, let me see the best I can do for you today Before proceeding <br>May I know your first and last name  </h1> 
+
+    <div class="form-group">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+    </div>

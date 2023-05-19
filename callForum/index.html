@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hewlett Packard Enterprise Call Script</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form class="container">
+		<h1>Thank you for calling Hewlett Packard Enterprise (HPE)</h1>
+		<h1>You’re talking to <span id="name"></span> from <span id="team"></span> and how may I help you today?</hi>
+
+		<div class="sticky issue-description">
+		<div class="form-group flex">
+            
+			<div class="rough-name">
+            <label for="rough-name">Name</label>
+            <input type="text">
+            </div>
+            <div class="issue">
+            <label for="issue-description">Issue Description:</label>
+			<textarea rows="74" cols="50" id="issueDescription" name="issue-description" class="textarea" required>
+Brief Issue 
+
+            
+Error Code
+
+
+Issue Description            
+            </textarea>
+        </div>
+		</div>
+		</div>
+       <div class="text">
+        <p>Tell the customer that you will be happy to help and assure them</p>
+        <h1>I understand that you are facing a Problem, let me see the best I can do for you today.<br> Before proceeding, <br>May I know your first and last name  </h1> 
+       </div>
+
+       <!-- The NATO Code and Input Field for First & Last Name -->
+        <div class="input-container">
+            <div>
+        <label for="inputField">First Name & Last Name:</label>
+            <input type="text" id="inputField" class="input-field">
+            </div>
+            <button class="toggle-button" id="toggleButton">Toggle Content</button>
+        </div>
+        <section>        
+              <div class="content-container">
+                <div class="content" id="content"></div> 
+              </div>
+        </section>
+
+		<div class="form-group">
+			<label for="existing-case">Are you calling about an existing case or a new case?</label>
+			<input type="radio" id="New-case" name="existing-case" required> New
+			<input type="radio" id="Existing-case" name="existing-case" required> Existing
+		</div>
+
+		<div class="form-group">
+			<label for="phone">Phone Number:</label>
+			<input type="tel" id="phone" name="phone" required>
+		</div>
+
+		<div class="form-group">
+			<label for="alt-phone">Alternative Contact Number:</label>
+			<input type="tel" id="altPhone" name="alt-phone">
+		</div>
+
+        <div class="form-group">
+			<label for="alt-phone">Alternative Contact Number Holders Name:</label>
+			<input type="tel" id="altPhoneName" name="alt-phone">
+		</div>
+
+<!-- Email :- NATO Confirmatin -->
+    <div class="input-container">
+        <div>
+        <label for="email">Email Address:</label>
+        <input type="email" id="EmailInputField" class="email-input-field" required>
+        </div>
+        <button class="toggle-button" id="EmailToggleButton">Toggle Content</button>
+    </div>
+    <section>        
+          <div class="content-container">
+            <div class="content" id="EmailContent"></div> 
+          </div>
+    </section>
+<!-- Email :- NATO Confirmatin ^^^^^^ -->
+	
+    <p>I understand that there is an issue</p>
+
+        <!-- Asset Serial Number :- NATO Confirmatin -->
+    <div class="input-container">
+        <div>
+        <label for="asset-serial">Asset Serial Number:</label>
+        <input type="text" id="assetSerialNumberInputField" class="input-field">
+        </div>
+        <button class="toggle-button" id="assetSerialNumberToggleButton">Toggle Content</button>
+    </div>
+    <section>        
+          <div class="content-container">
+            <div class="content" id="assetSerialNumberContent"></div> 
+          </div>
+    </section>
+     <!-- Asset Serial Number :- NATO Confirmatin ^^^-->
+
+     <p>Please give me a minute to check the warranty details</p>
+     <p>Check in Entitlement search and inform the customer the following:</p>
+     <p>
+        <ul>
+            <li><p>So i can see that you are calling with regards to &lt;&lt;&lt; PRODUCT NAME &gt;&gt;&gt;</p></li>
+            <li> <p>The Warranty / Contract duration</p> </li>
+            <li> <p>Coverage Window</p> </li>
+            <li> <p>Response Time</p> </li>
+        </ul>
+     </p>
+
+     <div class="form-group">
+        <label for="enviornment-info">is this a Production unit | test unit | Maintanance Unit?</label>
+        <input type="radio" id="production-unit" name="existing-case" required> Production
+        <input type="radio" id="test-unit" name="existing-case" required> Test 
+        <input type="radio" id="test-unit" name="existing-case" required> Maintanance 
+    </div>
+
+
+        <div class="form-group">
+            <label for="system-location"l>System Location:</label>
+            <input type="text" id="systemLocation" name="system-location" required>
+        </div>
+
+        <div class="form-group">
+            <label for="system-location"l>if the location is india : Ask for GSTIN</label>
+            <input type="text" id="systemGST" name="system-location" required>
+        </div>
+
+        <div class="form-group">
+			<label for="asset-serial">Name of the Company:</label>
+			<input type="text" id="companyName" name="asset-serial" required>
+		</div>
+
+		<div class="form-group">
+			<label for="os">Operating System:</label>
+			<input type="text" id="os" name="os" required>
+		</div>
+
+		<div class="form-group">
+			<label for="issue-start">Issue Start Date:</label>
+			<input type="text" id="issueStart" name="issue-start" required>
+		</div>
+
+		<div class="form-group hold-btn">
+            <button id="timerButton" class="toggle-button">Place Call on Hold</button>
+            <div id="timerDisplay" class="timer">
+                <span id="timer">Elipsed Time</span>
+            </div>
+           
+        </div>
+
+		<div class="form-group">
+			<label for="case-id">Case ID:</label>
+			<input type="text" id="case-id" name="case-id" required>
+		</div>
+        <p>Close all the Tabs and Applications which you opened</p>
+        <p>	Please remember to click reply all when you reply to the Email
+	<br>
+            Inform the customer, you will receive a call from the Technical team shortly (call back).
+            <br>
+        Is there anything else I could help you with.</p>
+		<div class="form-group">
+			<label for="summary">Summary:</label>
+			<textarea id="summary" name="summary" class="textarea" required></textarea>
+		</div>
+
+		<div class="form-group">
+			<label for="further-assistance">Further Assistance:</label>
+			<input type="text" id="further-assistance" name="further-assistance" required>
+		</div>
+
+		<input type="submit" value="Submit" id="submit">
+
+
+        <section>
+            <button class="btn" id="consoleLog">Console show</button>
+        </section>
+
+        <h1>Thank you for choosing Hewlett Packard Enterprise</h1>
+	</form>
+
+    <h3>Probing Questions</h3>
+  <p>were there any new h/w changes made</p>
+  <p>error code</p> 
+  <p>from when are you facing this issue</p>
+  <p>Have you tried foing any troubleshooting steps</p>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
